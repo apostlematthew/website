@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
-       * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -17,13 +17,13 @@
         body, html {
             height: 100%;
             font-family: Caslon, serif;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         /* Parallax container */
         .parallax {
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg/1920px-The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg');
-            height: 100%;
+            height: 100vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -39,23 +39,23 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, black 100%); /* Gradient transition */
-            z-index: 1; /* Ensure this is below the text */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, black 100%);
+            z-index: 1;
         }
 
-        /* Adjusted text position for top 1/3 */
+        /* Adjusted text position */
         .centered-text {
             position: absolute;
-            top: 20%; /* Top third */
+            top: 20%;
             left: 50%;
             transform: translate(-50%, -30%);
             color: whitesmoke;
             font-size: 3em;
-            letter-spacing: 0.12em; /* Kerning adjustment */
+            letter-spacing: 0.12em;
             font-weight: bold;
             text-align: center;
             text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
-            z-index: 2; /* Ensure the text is on top */
+            z-index: 2;
         }
 
         /* Full page height for parallax effect */
@@ -67,20 +67,49 @@
 
         /* Styling for footer */
         .footer {
-            position: absolute;
-            bottom: 5%; /* 5% margin from bottom */
-            left: 10%; /* 10% margin from left */
-            right: 10%; /* 10% margin from right */
-            text-align: center;
+            padding: 20px 10%;
+            background-color: rgba(0, 0, 0, 0.8);
             color: lightgrey;
             font-size: 1.3em;
-            letter-spacing: 0.05em; /* Kerning adjustment */
-            z-index: 2; /* Ensure the footer is on top of the black overlay */
+            letter-spacing: 0.05em;
+            z-index: 2;
+            text-align: center;
         }
 
         .footer a {
             color: white;
             text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .centered-text {
+                font-size: 2em;
+                padding: 0 10px;
+            }
+
+            .footer {
+                font-size: 1em;
+                padding: 10px 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .centered-text {
+                font-size: 1.5em;
+                top: 25%;
+                padding: 0 5px;
+            }
+
+            .footer {
+                font-size: 0.9em;
+                padding: 10px 5%;
+            }
+        }
+
+        /* Ensure the body can scroll */
+        body {
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -93,9 +122,8 @@
         </div>
     </div>
 
-    <!-- Footer on top of the black overlay with margins -->
+    <!-- Footer -->
     <div class="footer">
-        <!-- <p><i>“The Christian tradition contains all the necessary means for the salvation of the world.”</i></p> -->
         <br>
         <p>The Society of Saint Matthew the Apostle is an association with the mission to keep and further the Christian faith through prayer and the intercession of Saint Matthew.</p>
         <br>
