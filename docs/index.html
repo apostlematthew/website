@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Society of Saint Matthew the Apostle</title>
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAVklEQVRIDbXBAQEAAABCoP6PbQoLAAAAAQAAAP//AQH7AAAAgA4ZAAAAAAAAAAD9AAAApY+gGyAQAAAAgA4eQYyECAMAAgAAABUABqJINmhUKv0AAAAASUVORK5CYII=" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Caslon, serif;
+            overflow: hidden;
+        }
+
+        /* Parallax container */
+        .parallax {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg/1920px-The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg');
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Black overlay layer with gradient transition to black at the bottom */
+        .parallax::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, black 100%); /* Gradient transition */
+            z-index: 1; /* Ensure this is below the text */
+        }
+
+        /* Adjusted text position for top 1/3 */
+        .centered-text {
+            position: absolute;
+            top: 20%; /* Top third */
+            left: 50%;
+            transform: translate(-50%, -30%);
+            color: whitesmoke;
+            font-size: 3em;
+            letter-spacing: 0.12em; /* Kerning adjustment */
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+            z-index: 2; /* Ensure the text is on top */
+        }
+
+        /* Full page height for parallax effect */
+        .parallax::after {
+            content: "";
+            display: block;
+            height: 100%;
+        }
+
+        /* Styling for footer */
+        .footer {
+            position: absolute;
+            bottom: 5%; /* 5% margin from bottom */
+            left: 10%; /* 10% margin from left */
+            right: 10%; /* 10% margin from right */
+            text-align: center;
+            color: lightgrey;
+            font-size: 1.3em;
+            letter-spacing: 0.05em; /* Kerning adjustment */
+            z-index: 2; /* Ensure the footer is on top of the black overlay */
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Parallax section with the image -->
+    <div class="parallax">
+        <!-- Text over the parallax image -->
+        <div class="centered-text">
+            Society of Saint Matthew the Apostle
+        </div>
+    </div>
+
+    <!-- Footer on top of the black overlay with margins -->
+    <div class="footer">
+        <!-- <p><i>“The Christian tradition contains all the necessary means for the salvation of the world.”</i></p> -->
+        <br>
+        <p>The Society of Saint Matthew the Apostle is an association with the mission to keep and further the Christian faith through prayer and the intercession of Saint Matthew.</p>
+        <br>
+        <p>The Society also sponsors and supports churches, clergy, and efforts to advance Christian faith and culture.</p>
+        <br>
+        <p>The Society is registered civilly as a nonprofit corporation.</p>
+        <br>
+        <p>To contact the Society you may use our <a href="https://docs.google.com/forms/d/e/1FAIpQLScOlOyB6ehHSEgNCbLh3OGjVGrhI21Z8OSs7tQLZ4YnIfVa6A/viewform">contact form</a> or write to our mailing address:</p>
+        <br>
+        <p><em>Society of Saint Matthew the Apostle</em></p>
+        <p>1710 Keller Parkway, Ste 1020, Keller, TX 76248-3749, USA</p>
+    </div>
+</body>
+</html>
