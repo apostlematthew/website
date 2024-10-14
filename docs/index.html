@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Society of Saint Matthew the Apostle</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-<style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -39,7 +38,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, black 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%);
             z-index: 1;
         }
 
@@ -58,11 +57,22 @@
             z-index: 2;
         }
 
-        /* Full page height for parallax effect */
-        .parallax::after {
-            content: "";
-            display: block;
-            height: 100%;
+        /* Verse text styling */
+        .verse-text {
+            font-size: 1.5em;
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 40px;
+            z-index: 2;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            letter-spacing: 0.08em;
+        }
+
+        .verse-text p {
+            margin: 10px 0;
         }
 
         /* Styling for footer */
@@ -88,6 +98,10 @@
                 padding: 0 10px;
             }
 
+            .verse-text {
+                font-size: 1.2em;
+            }
+
             .footer {
                 font-size: 1em;
                 padding: 10px 5%;
@@ -99,6 +113,10 @@
                 font-size: 1.5em;
                 top: 25%;
                 padding: 0 5px;
+            }
+
+            .verse-text {
+                font-size: 1em;
             }
 
             .footer {
@@ -116,9 +134,15 @@
 <body>
     <!-- Parallax section with the image -->
     <div class="parallax">
-        <!-- Text over the parallax image -->
+        <!-- Title text over the parallax image -->
         <div class="centered-text">
             Society of Saint Matthew the Apostle
+        </div>
+        <!-- Matthew 6:33 below the title -->
+        <div class="verse-text">
+            <p>ζητεῖτε δὲ πρῶτον τὴν βασιλείαν τοῦ Θεοῦ καὶ τὴν δικαιοσύνην αὐτοῦ, καὶ ταῦτα πάντα προστεθήσεται ὑμῖν.</p><br>
+            <p>Quaerite autem primum regnum Dei et iustitiam eius, et haec omnia adicientur vobis.</p><br>
+            <p>But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.</p>
         </div>
     </div>
 
