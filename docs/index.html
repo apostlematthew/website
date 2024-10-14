@@ -27,6 +27,10 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: relative;
         }
 
@@ -38,16 +42,12 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.9) 100%);
             z-index: 1;
         }
 
         /* Adjusted text position */
         .centered-text {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -30%);
             color: whitesmoke;
             font-size: 3em;
             letter-spacing: 0.12em;
@@ -55,19 +55,17 @@
             text-align: center;
             text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
             z-index: 2;
+            margin-bottom: 20px;
         }
 
         /* Verse text styling */
         .verse-text {
             font-size: 1.5em;
+            padding: 5%;
             text-align: center;
             color: whitesmoke;
-            margin-top: 40px;
             z-index: 2;
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, 0);
+            margin-top: 10px;
             letter-spacing: 0.08em;
         }
 
@@ -78,11 +76,10 @@
         /* Styling for footer */
         .footer {
             padding: 20px 10%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.95);
             color: lightgrey;
             font-size: 1.3em;
             letter-spacing: 0.05em;
-            z-index: 2;
             text-align: center;
         }
 
