@@ -36,6 +36,13 @@
             padding: 5%;
         }
 
+        /* Disable background-attachment: fixed for mobile devices */
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
         /* Black overlay layer with gradient transition to black at the bottom */
         .parallax::before {
             content: "";
