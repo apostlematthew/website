@@ -71,6 +71,20 @@
             line-height: 1.5em;
             background: #f5f0e1;
             border-radius: 10px;
+            position: relative;
+        }
+
+        /* Styling for the headshot image */
+        .headshot {
+            width: 30%;
+            height: auto;
+            border-radius: 10%;
+            overflow: hidden;
+            position: relative;
+            top: -10px;
+            left: 20px;
+            bottom: 20px;
+            border: 3px solid #f5f0e1;
         }
 
         /* Styling for footer */
@@ -135,7 +149,8 @@
         <!-- Title text over the parallax image -->
         <div class="centered-text">Matthew G. Ellison<br><span style="font-style: italic; display: block; margin-top: 10px;">priestly vocation appeal</span></div><br>
         <!-- New body text below the title -->
-        <div class="body-text"
+        <div class="body-text">
+            <img src="mge-headshot.jpg" alt="Matthew G. Ellison Headshot" class="headshot">
             <p><span id="current-month-year" style="font-weight: bold; display: block; text-align: right; margin-right: 10%;"><script>
     document.addEventListener("DOMContentLoaded", function() {
         const date = new Date();
@@ -145,8 +160,8 @@
         document.getElementById("current-month-year").textContent = currentMonthYear;
     });
 </script>
-</span><p><br>
-            <p>Dear brothers and sisters; family, friends:<p><br>
+</span></p>
+            <p>Dear brothers and sisters; family, friends:</p><br>
             <p>Deo gratias! Thanks be to God! It is with great joy that I write to share the good news of my vocation and to ask for your prayers and support.</p><br>
             <p>After graduating from Georgetown in 2018 and a few fruitful years of work in international affairs, research, and publishing—and much prayer, contemplation, and reflection—I have heard a call to enter the seminary and begin training for the priesthood. This was not a decision reached lightly, but I have grown ever more confident and at peace with a strong sense that no matter what lies ahead, God is calling me to take this next step towards a life of greater service to Him and His Church.</p><br>
             <p>This fall, I have begun as a postulant with the <a href="https://institute-christ-king.org/spirituality">Institute of Christ the King</a>, which is an international institute of apostolic life of pontifical rite—meaning it is under the direct authority of the Holy See in Rome—whose reason for being is the honor of God and the sanctification of priests in the service of the Church and souls.</p><br>
